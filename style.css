@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #F5F6FA;
+    color: #2C3E50;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select {
+    color: #2C3E50;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #2ECC71;
+    color: white;
+    cursor: pointer;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #27AE60;
+}
+
+.total {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#lista {
+    margin-top: 15px;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#lista li {
+    background: #27AE60;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#lista li button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+#lista li.alto {
+    background: #FF6B6B;
+    color: white;
+}
+
+.acoes button {
+    padding: 5px 8px;
+}
+
+.remover {
+    background: #E74C3C;
+}
+
+.remover:hover {
+    background: #C0392B;
+}
+

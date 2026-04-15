@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Controle de Gastos</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <div class="container">
+        <form class="form">
+            <h1>Controle de Gastos</h1>
+
+            <input type="text" id="descricao" placeholder="Descrição" required>
+
+            <input type="number" id="valor" placeholder="Valor" required>
+
+            <select name="categoria" id="categoria">
+                <option value="categoria">Categoria</option>
+                <option value="Saúde">Saúde</option>
+                <option value="Alimentação">Alimentação</option>
+                <option value="Transporte">Transporte</option>
+                <option value="Moradia">Moradia</option>
+                <option value="Vestuário">Vestuário</option>
+                <option value="Lazer">Lazer</option>
+                <option value="Outros">Outros</option>
+            </select>
+
+            <button type="button" onclick="adicionarGasto()">Adicionar</button>        </form>
+
+        <div class="total">
+            Total: R$ <span id="total">0.00</span>
+        </div>
+    
+        <ul id="lista"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
